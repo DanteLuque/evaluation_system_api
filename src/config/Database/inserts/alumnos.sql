@@ -1,4 +1,4 @@
-INSERT INTO ALUMNOS (NOMBRES, APELLIDOS,DNI, created_at, updated_at) VALUES
+INSERT INTO ALUMNOS (NOMBRES, APELLIDOS, DNI, created_at, updated_at) VALUES
 ('Carlos', 'García', '87654321', NOW(), NOW()),
 ('María', 'Rodríguez', '12345678', NOW(), NOW()),
 ('Juan', 'Pérez','11111111', NOW(), NOW()),
