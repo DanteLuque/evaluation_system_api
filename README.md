@@ -19,3 +19,10 @@
 
 ### Alumnos
 - GET http://localhost:5000/api/v1/alumno
+- GET http://localhost:5000/api/v1/alumno/2
+- POST http://localhost:5000/api/v1/alumno/
+  {
+    "nombres": "Dante",
+    "apellidos": "Luque",
+    "dni": "77663399"
+  }
