@@ -16,3 +16,6 @@
 -- correr insersiones desarrollo_evaluacion
 
 -- por ultimo ejecutar queries/tarea_seminario para comprobar si funcionan los ejercicios
+
+### Alumnos
+- GET http://localhost:5000/api/v1/alumno

@@ -1,4 +1,4 @@
-import ModelBase from "../../shared/model-base";
+import ModelBase from "../../shared/model-base.js";
 
 class Alumno extends ModelBase {
   constructor(
@@ -79,7 +79,7 @@ class Alumno extends ModelBase {
 
   static async exists(conexion, dni) {
     const [result] = await conexion.query(
-      "SELECT COUNT(*) AS count FROM ZOMBIES WHERE DNI = ? AND deleted_at IS NULL",
+      "SELECT COUNT(*) AS count FROM ALUMNOS WHERE DNI = ? AND deleted_at IS NULL",
       [dni]
     );
     return result[0].count > 0;

@@ -1,12 +1,12 @@
 import express from 'express';
 import db from './config/mysql/mysql.js';
-import ZombieRouter from './modules/zombie/routes/zombie.route.js';
+import AlumnoRouter from './modules/alumnos/routers/alumno.route.js';
 
 class Server {
   constructor() {
     this.app = express();
     this.port = process.env.PORT;
-    this.zombie_path = '/api/v1/zombie';
+    this.alumno_path = '/api/v1/alumno';
 
     this.connectDB();
     this.middlewares();
@@ -28,7 +28,7 @@ class Server {
   }
 
   routes() {
-    this.app.use(this.zombie_path, ZombieRouter);
+    this.app.use(this.alumno_path, AlumnoRouter);
   }
 }
 
