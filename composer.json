@@ -1,0 +1,17 @@
+{
+    "name": "asus/evaluation_system_api",
+    "autoload": {
+        "psr-4": {
+            "Asus\\EvaluationSystemApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "danteLuqueGlobalsOne",
+            "email": "dante.luque@globals.one"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
