@@ -26,6 +26,11 @@ class Server
     {
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $method = $_SERVER['REQUEST_METHOD'];
+        $basePath = '/evaluation_system_api/public';
+
+        if (str_starts_with($uri, $basePath)) {
+            $uri = substr($uri, strlen($basePath));
+        }
 
         $route = $this->findMatchingRoute($uri);
 

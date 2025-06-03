@@ -1,5 +1,4 @@
 <?php
-echo 'Buscando archivo en: ' . __DIR__ . '/../../shared/model-base.php';
 
 require_once __DIR__ . '/../../shared/model-base.php';
 

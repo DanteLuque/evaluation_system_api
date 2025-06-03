@@ -15,7 +15,7 @@ class EvaluacionRoutes
     {
         $router['/api/v1/evaluaciones'] = [
             'GET' => fn() => $this->controller->getAll(),
-            'POST' => fn() => $this->controller->create($_POST)
+            'POST' => fn() => $this->controller->create()
         ];
 
         $router['/api/v1/evaluaciones/(\d+)'] = [
