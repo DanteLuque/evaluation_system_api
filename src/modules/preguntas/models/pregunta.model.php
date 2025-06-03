@@ -8,27 +8,18 @@ class Pregunta extends ModelBase
     public string $enunciado;
     public float $puntaje;
     public int $idEvaluacion;
-    public ?string $created_at;
-    public ?string $updated_at;
-    public ?string $deleted_at;
 
     public function __construct(
         ?int $id,
         string $enunciado,
         float $puntaje,
         int $idEvaluacion,
-        ?string $created_at = null,
-        ?string $updated_at = null,
-        ?string $deleted_at = null
     ) {
         parent::__construct();
         $this->id = $id;
         $this->enunciado = $enunciado;
         $this->puntaje = $puntaje;
         $this->idEvaluacion = $idEvaluacion;
-        $this->created_at = $created_at;
-        $this->updated_at = $updated_at;
-        $this->deleted_at = $deleted_at;
     }
 
     public static function getAll(PDO $db): array
